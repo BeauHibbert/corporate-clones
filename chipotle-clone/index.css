@@ -97,6 +97,17 @@ img {
     min-height: 40px;
 }
 
+.button-secondary {
+    background-color: #451400;
+    width: 85vw;
+    height: 48px;
+    user-select: none;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* flex classes */
 .flex-row {
     display: flex;
@@ -235,10 +246,73 @@ header .mobile-nav-wrapper .header-left .mobile-nav-svgs img {
     width: 24px;
     margin-right: 10px;
 }
-header .mobile-nav-wrapper .mobile-nav p {
+header .mobile-nav-wrapper .mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 0;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #d4cbc7;
+}
+header .mobile-nav-wrapper .mobile-nav li {
+    padding: 0;
+}
+header .mobile-nav-wrapper .mobile-nav li:not(:last-of-type) {
+    margin-bottom: 1em;
+}
+header .mobile-nav-wrapper .mobile-nav p  {
     text-align: center;
     font-weight: bold;
     font-size: 20px;
+}
+header .mobile-nav-wrapper .mobile-nav .points-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+}
+header .mobile-nav-wrapper .mobile-nav .points-wrapper p {
+    font-size: 26px;
+    font-family: var(--font-headline);
+    text-transform: uppercase;
+    max-width: 270px;
+    margin: 0 auto 1em;
+}
+header .mobile-nav-wrapper .mobile-nav .points-wrapper .button-secondary p {
+    color: #fff;
+    font-family: var(--font-headline);
+    font-size: 1.2em;
+    margin-bottom: 0;
+}
+header .mobile-nav-wrapper .mobile-nav .points-wrapper .sign-in {
+    width: 75vw;
+    margin: 15px auto;
+}
+header .mobile-nav-wrapper .mobile-nav .points-wrapper .sign-in p {
+    font-size: 1.2em;
+    margin: 0;
+}
+header .mobile-nav-wrapper .mobile-nav .points-wrapper .sign-in a {
+    color: #b68207;
+    border-bottom: 2px solid #b68207;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-family: var(--font-headline);
+}
+header .mobile-nav-wrapper .mobile-nav .points-wrapper .flag {
+    padding-top: 50px;
+}
+header .mobile-nav-wrapper .mobile-nav .points-wrapper .flag img {
+    height: 32px;
+    width: 32px;
+}
+header .mobile-nav-wrapper .mobile-nav .points-wrapper .flag p {
+    font-family: var(--font-text);
+    text-transform: unset;
+    font-size: 16px;
+    margin: 0;
+    padding-left: 10px;
 }
 /* header lower left */
 header .mobile-nav-wrapper .header-left {
