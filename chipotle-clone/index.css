@@ -452,33 +452,25 @@ header ul li a:hover {
 }
 
 /* footer styles */
-footer p {
-    margin: 10px;
-}
-footer p.created-by {
-    text-align: center;
-}
-.created-by a {
-    text-decoration: underline;
+footer ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding-left: 0;
+    align-items: flex-start;
 }
 
-/* hero section */
-.hero-section .image-wrapper {
-    height: 300px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+footer {
+    background-color: #1b0800;
 }
-.hero-section .image-wrapper .content-wrapper {
-    z-index: 5;
-}
-.hero-section h1 {
-    text-transform: uppercase;
+footer ul li a {
+    flex: 0 0 auto;
     color: #fff;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-family: var(--font-headline);
 }
-.turn-red {
-    color: red;
-}
+
+
 
 
