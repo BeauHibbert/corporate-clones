@@ -187,16 +187,30 @@ img {
 header nav.desktop-nav-wrapper {
     display: none;
 }
+
 header .mobile-nav-wrapper .mobile-nav-svgs {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
 }
 header .mobile-nav-wrapper .mobile-nav-svgs svg {
     fill: #000;
     height: 38.71px;
     width: 38.71px;
 }
+
+header .mobile-nav-wrapper .mobile-nav-svgs svg#show-mobile-nav {
+    height: 24px;
+    width: 24px;
+    color: rgba(0,0,0,.58);
+    fill: transparent;
+}
+
+header .mobile-nav-wrapper .mobile-nav-svgs svg#location-pin-icon {
+    display: none;
+}
+
 header .mobile-nav-wrapper .mobile-nav p {
     text-align: center;
     font-weight: bold;
@@ -218,6 +232,9 @@ header ul li a:hover {
         display: none;
     }
     header nav.desktop-nav-wrapper {
+        display: block;
+    }
+    header .mobile-nav-wrapper .mobile-nav-svgs svg#location-pin-icon {
         display: block;
     }
 }
