@@ -581,5 +581,18 @@ footer .footer-end {
     margin-left: 20px;
 }
 
+@media (min-width: 1200px) {
+    footer .footer-nav {
+        flex-direction: row;
+    }
+
+    footer .footer-about {
+        columns: 3;
+    }    
+
+    footer .footer-media-stuff {
+        flex-direction: row;
+    }
+}
 
 
