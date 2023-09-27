@@ -156,7 +156,7 @@ img {
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 790px) {
     .flex-between-lg {
         justify-content: space-between;
     }
