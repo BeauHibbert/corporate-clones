@@ -1,0 +1,177 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chipotle Clone</title>
+        <meta name="description" content="Order burritos, bowls, quesadillas, tacos, salads, Lifestyle Bowls and more from the Chipotle menu. Order online for pick up or delivery near you and join Chipotle Rewards today.">
+        <link rel="stylesheet" type="text/css" href="./index.css" />
+        <link href="./assets/cmg-medallion-logo.ico" rel="icon">
+        <!-- Load Nunito font from Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <!-- Load jQuery in via CDN -->
+        <script 
+            src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
+            integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" 
+            crossorigin="anonymous">
+        </script>
+        <script>
+            $(document).ready(function() {
+                $('.created-by a').hover(
+                    function() {
+                        $(this).toggleClass('turn-red');
+                    }
+                );
+                $('#show-mobile-nav').click(
+                    function() {
+                        $(this).toggleClass('display-none');
+                        $('#close-mobile-nav').toggleClass('display-none');
+                        $('.mobile-nav').toggleClass('display-none');
+                    }
+                );
+                $('#close-mobile-nav').click(
+                    function() {
+                        $(this).toggleClass('display-none');
+                        $('#show-mobile-nav').toggleClass('display-none');
+                        $('.mobile-nav').toggleClass('display-none');
+                    }
+                );
+            });
+        </script>
+    </head>
+    <body>
+        <header>
+            <nav class="mobile-nav-wrapper">
+                <div class="header-lower">
+                    <div class="header-left flex-row flex-start-xs">
+                        <img src="/chipotle-clone-1/assets/benjamin franklin plumbers.png" />
+                        <div class="mobile-nav-svgs">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" id="close-mobile-nav" class="display-none">
+                                <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z" />
+                            </svg>
+                            <svg id="show-mobile-nav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+                        </div>
+                    </div>
+
+                <div class="mobile-nav display-none">
+                    <ul class="flex-middle-sm flex-start-sm">
+                        <button><a href="https://www.benjaminfranklinplumbing.com/locations/#~6b3U7U7">find a location</a></button>
+                            <li><a href="https://www.benjaminfranklinplumbing.com/services/">services</a></li>
+                            <li><a href="https://www.benjaminfranklinplumbing.com/about-us/">about us</a></li>
+                            <li><a href="https://www.benjaminfranklinplumbing.com/reviews/">reviews</a></li>
+                            <li><a href="https://www.benjaminfranklinplumbing.com/expert-tips/">expert tips</a></li>
+                            <li><a href="https://www.benjaminfranklinplumbing.com/newsletter/">newsletter</a></li>
+                        <button><a href="https://www.benjaminfranklinplumbing.com/plumbing-jobs/">careers</a></button>
+                        <button><a href="https://www.benjaminfranklinplumbing.com/franchise/#~6b3U7U7">own a franchise</a></button>
+                    </ul>
+                    <div class="points-wrapper">
+                        <p>earn points, complete challenges, and redeem rewards</p>
+                        <div class="button-secondary">
+                            <p >create an account</p>
+                        </div>
+                        <div class="sign-in flex-row flex-around-sm flex-middle-sm">
+                            <p>already a member?</p>
+                            <a>sign in</a>
+                        </div>
+                        <div class="flag flex-row flex-middle-sm">
+                            <img src="https://www.chipotle.com/content/dam/poc/order/images/icons/united-states-flag.png"/>
+                            <p>United States</p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <nav class="desktop-nav-wrapper">
+                <div class="header-lower flex-row flex-between-lg">
+                    <div class="flex-row flex-middle-sm header-left">
+                        <img src="/chipotle-clone-1/assets/benjamin franklin plumbers.png" />
+                        <div class="flex-row flex-middle-sm user-wrapper">
+                            <img src="https://www.chipotle.com/content/dam/poc/order/images/icons/user-outline.svg" />
+                            <h6>Sign In</h6>
+                        </div>
+                    </div>
+                    <ul class="flex-row flex-middle-sm flex-around-md">
+                        <li><a href="https://chipotle.com/order/#menu">Order</a></li>
+                        <li><a href="https://catering.chipotle.com/">Catering</a></li>
+                        <li><a href="https://chipotle.com/rewards">Rewards</a></li>
+                        <li><a href="https://chipotle.com/values">Our Values</a></li>
+                        <li><a href="https://chipotle.com/nutrition-calculator">Nutrition</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="hero-wrapper">
+                <img class="outline-mobile" src="/chipotle-clone-1/assets/benjamin franklin mobile.png" alt="outline of benjamin franklin holding a wrench">
+                <img class="outline-desktop" src="/chipotle-clone-1/assets/benjamin franklin desktop.png" alt="outline of benjamin franklin holding a wrench">
+                <div class="hero-text-wrapper">
+                    <p>You Can Count on the<br><span>Punctual Plumbers!</span></p>
+                </div>
+        </div>
+        </header>
+
+        <main>
+            <!-- <div class="hero-text-wrapper">
+                <div>
+                    <p>You Can Count on the<br><span>Punctual Plumbers!</span></p>
+                </div>
+        </div> -->
+        </main>
+
+        <footer>
+            <div class="container">
+                <ul class="footer-nav">
+                    <li><a href="https://www.chipotle.com/contact-us">SERVICES</a></li>
+                    <li><a href="https://jobs.chipotle.com/">careers</a></li>
+                    <li><a href="https://www.chipotle.com/giftcards?ilink=footer">gift cards</a></li>
+                    <li><a href="https://chipotlegoods.com">chipotle goods</a></li>
+                    <li><a href="https://community.chipotle.com/">fundraising</a></li>
+                </ul>
+
+<div class="footer-media-stuff">
+
+                <div class="footer-about-wrapper">
+                    <p>about</p>
+                    <ul class="footer-about">
+                            <li><a href="https://www.chipotle.com/values">our values</a></li>
+                            <li><a href="https://ir.chipotle.com/">investors</a></li>
+                            <li><a href="https://www.chipotlecultivatefoundation.org/s">cultivate foundation</a></li>
+                            <li><a href="https://locations.chipotle.com/">all locations</a></li>
+                            <li><a href="https://privacy-central.securiti.ai/#/dsr/21b21918-cfbd-477b-be6e-f61673d9175a">do not sell or share my personal information/your opt-out rights</a></li>
+                            <li><a href="https://newsroom.chipotle.com/welcome">news and events</a></li>
+                            <li><a href="https://www.chipotle.com/values">health and safety</a></li>
+                            <li><a href="https://www.pizzerialocale.com/">pizzeria locale</a></li>
+                            <li><a href="https://www.chipotle.com/about-us/sustainability">sustainability</a></li>
+                    </ul>
+                </div>
+            <div class="footer-connect-wrapper">
+                            <p>connect with us</p>
+                            <img src="https://chipotle.com/content/dam/chipotle/global-site-design/en/social-media/facebook/icons/facebook.png" />
+                            <img src="https://chipotle.com/content/dam/chipotle/global-site-design/en/social-media/instrgram/icons/insta.png" />
+                            <img src="https://chipotle.com/content/dam/chipotle/global-site-design/en/social-media/twitter/icons/twitter.png" />
+            </div>
+            <div class="footer-download-wrapper">
+                <p>download our app</p>
+                <img src="https://www.chipotle.com/content/dam/chipotle/global-site-design/en/brand/icons/app/apple-store.png" />
+                <img src="https://www.chipotle.com/content/dam/chipotle/global-site-design/en/brand/icons/app/google-play.png" />
+            </div>
+
+</div>
+
+
+            <div class="footer-flag-wrapper">
+                <img src="https://www.chipotle.com/content/dam/poc/order/images/icons/united-states-flag.png" />
+                <p>united states</p>
+            </div>
+            <div class="footer-end">
+                <p>© 2023 Chipotle Mexican Grill</p>
+                <li>california transparency in supply <br>chains act</li>
+                <li>terms of use</li>
+                <li>accessibility statement</li>
+                <li>privacy policy, including california privacy rights</li>
+                <li>privacy center</li>
+                <li>cookie preferences</li>
+            </div>
+            </div>
+        </footer>
+    </body>
+</html>
