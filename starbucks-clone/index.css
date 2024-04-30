@@ -22,6 +22,9 @@
 /* base styles */
 html {
     min-width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    font-size: 62.5%;
 }
 body {
     min-width: 100%;
@@ -42,6 +45,22 @@ p, a, li {
 
 a {
     text-decoration: none;
+}
+
+a.btn {
+    display: inline-block;
+    background: none;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    padding: 7px 16px;
+    /* font-weight: 600;xs */
+    line-height: 1.2;
+    text-align: center;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    font-family: var(--font-headline);
 }
 
 img {
@@ -184,8 +203,39 @@ img {
 }
 
 /* header styles */
+
+header ul {
+    padding-left: 0;
+}
+header ul li {
+    margin: 10px;
+    list-style-type: none;
+}
+header ul li a:hover {
+    color: #00754A;
+}
+/* mobile nav styles */
+
+
 header nav.desktop-nav-wrapper {
     display: none;
+}
+
+header .mobile-nav-wrapper {
+    background-color: #fff;
+}
+
+header .mobile-nav-wrapper .mobile-nav {
+    bottom: auto !important;
+    position: fixed;
+    top: 72px;
+    height: calc(100% - 72px);
+    left: 20vw;
+    right: 0;
+    width: 80vw;
+    box-shadow: inset 0 4px 3px -3px rgba(0,0,0,.1), inset 0 4px 2px -2px rgba(0,0,0,.07);
+    padding-top: 3.2rem;
+    background-color: #fff;
 }
 
 header .mobile-nav-wrapper .mobile-nav-svgs {
@@ -216,17 +266,58 @@ header .mobile-nav-wrapper .mobile-nav p {
     font-weight: bold;
     font-size: 20px;
 }
-header ul {
-    padding-left: 0;
-}
-header ul li {
-    margin: 10px;
-    list-style-type: none;
-}
-header ul li a:hover {
-    color: #00754A;
+
+header .mobile-nav-wrapper .mobile-nav hr {
+    margin: 16px 32px 32px;
+    border: 0;
 }
 
+header .mobile-nav-wrapper .mobile-nav hr::before {
+    content: "";
+    display: block;
+    border-top: 2px solid rgba(0, 0, 0, .1);
+}
+
+header .mobile-nav-wrapper .mobile-nav a.signin {
+    color: rgba(0, 0, 0, .87);
+    margin-right: 1.6rem;
+}
+
+header .mobile-nav-wrapper .mobile-nav li {
+    /* margin: 20px 0px; */
+    padding: 16px 32px;
+    margin: 0;
+}
+
+header .mobile-nav-wrapper .mobile-nav li a {
+    font-size: 19px;;
+}
+
+header .mobile-nav-wrapper .mobile-nav div.btnwrapper {
+    padding: 0px 24px;
+    display: flex;
+}
+
+header .mobile-nav-wrapper .mobile-nav a.joinnow {
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+}
+
+header .mobile-nav-wrapper .mobile-nav div.findstorewrapper {
+    display: flex;
+    margin: 16px 0px 0px;
+    padding: 0px 24px;
+    align-items: center;
+}
+
+header .mobile-nav-wrapper .mobile-nav div.findstorewrapper svg {
+    padding: 0px 8px 0px 0px;
+}
+
+
+
+/* desktop nav */
 @media (min-width: 992px) {
     header nav.mobile-nav-wrapper {
         display: none;
