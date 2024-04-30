@@ -6,5 +6,6 @@ Open this project in your choice of code editor, and "Go Live" with it (view it 
 
 Links to corporate sites for comparison:
 
--   Chipotle: https://chipotle.com
--   Starbucks: https://starbucks.com
+- Chipotle: https://chipotle.com
+- Starbucks: https://starbucks.com
+- Ben Franklin: Under Construction
