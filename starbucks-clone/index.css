@@ -341,6 +341,37 @@ footer p.created-by {
     text-decoration: underline;
 }
 
+footer .buttons {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .buttons .button-wrapper {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+footer .buttons .button-wrapper button {
+    background: transparent;
+    border: none;
+}
+
+footer .links ul {
+    padding-left: 0;
+}
+
+footer .links ul li {
+    list-style-type: none;
+    margin: 0px 0px 8px;
+    padding: 4px;
+}
+
 /* hero section */
 .hero-section .image-wrapper {
     height: 300px;
